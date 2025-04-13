@@ -63,7 +63,7 @@
           </span>
           <span style="gap: 4px;" class="flex items-center">
             <%= inline_icon "card", size: 20, class: "muted align-middle", 'aria-label': "Cards", style: "transform: scale(1.2)" %>
-            <strong><%= event.stripe_cards.active.count %></strong>
+            <strong><%= event.stripe_cards.active.count + event.stripe_cards.deactivated.count %></strong>
           </span>
         </div>
         <div class="avatar-row" style="max-width: 300px;">
